@@ -487,6 +487,79 @@ section {
   letter-spacing: 0.5px;
 }
 
+/* Team grid for home page */
+.team-grid-home {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+  justify-items: center;
+}
+
+.member-tile {
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  max-width: 200px;
+}
+
+.tile-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.tile-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  transition: all 0.4s ease;
+}
+
+.member-tile:hover .tile-image {
+  box-shadow: 0 0 30px rgba(74, 14, 14, 0.4),
+              0 0 15px rgba(74, 14, 14, 0.3),
+              0 0 45px rgba(179, 120, 120, 0.2);
+  transform: scale(1.05);
+}
+
+.member-tile:hover .tile-image img {
+  filter: brightness(1.1);
+}
+
+.member-tile h4 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+  color: var(--text-dark);
+}
+
+.tile-title {
+  font-size: 0.85rem;
+  color: var(--burgundy);
+  font-weight: 500;
+  letter-spacing: 0.4px;
+}
+
+/* Centered layout for last row (3 items) */
+.team-grid-home > :nth-child(n+5) {
+  grid-column: auto;
+}
+
+@media (max-width: 1024px) {
+  .team-grid-home {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .team-grid-home {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 /* INNER PAGES */
 .inner-page header {
   position: relative;
