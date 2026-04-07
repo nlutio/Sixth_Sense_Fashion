@@ -494,6 +494,10 @@ section {
   gap: 30px;
   margin-top: 50px;
   justify-items: center;
+  justify-content: center;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .member-tile {
@@ -546,6 +550,33 @@ section {
 /* Centered layout for last row (3 items) */
 .team-grid-home > :nth-child(n+5) {
   grid-column: auto;
+}
+
+/* Team section link */
+.team-link {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.btn-secondary {
+  display: inline-block;
+  padding: 12px 28px;
+  background: var(--burgundy);
+  color: var(--white);
+  text-decoration: none;
+  border: 1px solid var(--burgundy);
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: transparent;
+  color: var(--burgundy);
 }
 
 @media (max-width: 1024px) {
