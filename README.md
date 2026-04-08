@@ -46,3 +46,30 @@ https://nlutio.github.io/Sixth_Sense_Fashion/
 * **Component-Based Logic:** A modular approach where the site is partitioned into functional groups (Forms, Tables, Content, and Assets).
 * **Responsive Layout:** Built with a focus on CSS variables for consistent branding and a "mobile-first" navigation approach.
 * **Interactive DOM:** Integration of JS features (marquee and validation logic) to enhance the user experience.
+
+DOM structure 
+document
+└── html
+    ├── head
+    │   ├── meta (charset, viewport)
+    │   ├── title
+    │   ├── link → css/styles.css
+    │   └── script → js/script.js (deferred)
+    │
+    └── body
+        ├── header (global)
+        │   ├── nav-left (Home / Products)
+        │   ├── logo (SS / Sixth Sense)
+        │   └── nav-right (Products / Links)
+        │
+        ├── announcement bar (marquee / notice)
+        │
+        ├── main (page-specific content)
+        │   ├── hero section (home only)
+        │   ├── product grid / event list / form / team grid
+        │   └── reusable sections
+        │
+        └── footer (global)
+
+
+        
