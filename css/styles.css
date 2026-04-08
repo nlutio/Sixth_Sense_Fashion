@@ -664,6 +664,20 @@ footer a {
   opacity: 0.8;
 }
 
+/* SECONDARY BUTTON (LIGHT BG) */
+.btn-secondary {
+  padding: 14px 36px;
+  border: 1px solid var(--burgundy);
+  color: var(--burgundy);
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+.btn-secondary:hover {
+  background-color: var(--burgundy);
+  color: var(--white);
+}
 /* EVENTS SECTION */
 .events-grid {
   display: grid;
