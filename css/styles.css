@@ -663,3 +663,34 @@ footer a {
   color: #080808;
   opacity: 0.8;
 }
+
+/* EVENTS SECTION */
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.event-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.event-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.event-card h3 {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+}
+
+.event-meta {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #777;
+}
