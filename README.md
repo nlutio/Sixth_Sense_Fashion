@@ -32,6 +32,14 @@ The website is structured as a multi-page static site, with each HTML page conne
 
 ---
 
+
+## Github repo
+https://github.com/nlutio/Sixth_Sense_Fashion
+
+## Github website link
+https://nlutio.github.io/Sixth_Sense_Fashion/
+
+
 ## 🚀 Key Technical Features
 
 * **Consistent Navigation:** A unified site structure across all pages using shared components.
